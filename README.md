@@ -1,7 +1,15 @@
 # parse-version-string
 
-Parses a version string into its constituent parts:
+Parses a version string into its constituent parts.
 
+## Import
+```javascript
+var parseVersionString = require("parse-version-string").default;
+
+import parseVersionString from 'parse-version-string');
+```
+
+## Usage
 ```javascript
 parseVersionString('1.2.3-alpha.4');
 // output:
