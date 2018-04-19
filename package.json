@@ -1,0 +1,31 @@
+{
+  "name": "parse-version-string",
+  "version": "1.0.0",
+  "description": "Parses a version string into its constituent parts",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel --minified parse-version-string.js | uglifyjs -c -m -o index.js",
+    "test": "npm run test:ci -- --watch",
+    "test:ci": "mocha --require ./mocha.setup.js src/*.spec.js"
+  },
+  "keywords": [
+    "parse",
+    "version",
+    "semver"
+  ],
+  "author": "Graham King <gking2224@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-uglify": "^1.0.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "mocha": "^5.1.1",
+    "uglify-js": "^3.3.21"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alphaeadevelopment/parse-version-string"
+  }
+}
