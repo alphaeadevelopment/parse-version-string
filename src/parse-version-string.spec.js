@@ -42,7 +42,6 @@ describe('parseSemver', () => {
       preReleaseType: 'alpha',
       preReleaseIncrement: 1,
     };
-    console.log(parseVersionString(semver));
     expect(parseVersionString(semver)).to.deep.equal(expected);
   })
   it('parses 1.2.3-alpha', () => {
