@@ -21,4 +21,12 @@ parseVersionString('1.2.3-alpha.4');
 //   preReleaseType: 'alpha',
 //   preReleaseIncrement: 4
 // }
+
+parseVersionString('1.2.3');
+// output:
+// {
+//   major: 1,
+//   minor: 2,
+//   patch: 3
+// }
 ```
