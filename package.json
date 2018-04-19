@@ -1,6 +1,6 @@
 {
   "name": "parse-version-string",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Parses a version string into its constituent parts",
   "main": "index.js",
   "scripts": {
